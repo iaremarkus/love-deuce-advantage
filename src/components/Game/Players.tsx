@@ -15,7 +15,7 @@ export const Players = ({ className = "", ...props }: PlayersProps) => {
   return (
     <div className={classNames("", className)} {...props}>
       {winner < 1 && (
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <PlayerCard player={"player1"} />
           <PlayerCard player="player2" />
         </div>

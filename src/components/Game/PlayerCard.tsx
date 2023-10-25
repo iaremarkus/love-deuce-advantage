@@ -27,7 +27,7 @@ export const PlayerCard = ({ player, className = "", ...props }: PlayerCardProps
         <div
           className={classNames(
             "bg-gradient-radial from-slate-800 to-slate-900",
-            "text-white text-5xl md:text-6xl lg:text-9xl aspect-square flex items-center justify-center rounded-2xl"
+            "text-white text-4xl md:text-6xl lg:text-9xl aspect-video md:aspect-square flex items-center justify-center rounded-2xl"
           )}
         >
           <AnimatePresence mode="wait">
@@ -70,7 +70,7 @@ export const PlayerCard = ({ player, className = "", ...props }: PlayerCardProps
         <button
           onClick={() => setScore({ [player]: score[player] + 1 })}
           className={classNames(
-            "p-4 px-6 text-4xl rounded-md shadow-xl bg-yellow-300",
+            "p-4 px-6 text-2xl md:text-4xl rounded-md shadow-xl bg-yellow-300",
             "transition hover:scale-110 hover:shadow-2xl hover:bg-yellow-400 active:scale-95"
           )}
         >
